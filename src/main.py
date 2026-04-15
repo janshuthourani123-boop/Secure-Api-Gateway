@@ -38,4 +38,4 @@ app.include_router(mock_backend_router)
 
 @app.on_event("startup")
 async def startup_event():
-    logger.info("gateway_starting", event="startup", status="ok")
+    logger.info("gateway_starting", status="ok")
